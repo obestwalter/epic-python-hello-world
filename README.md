@@ -1,10 +1,10 @@
-# Self referential Epic Hello World Creator
+# SREHWC - Self Referential Epic Hello World Creator
 
-To get right into the self referentiality: [here i a link to the page where this file is hosted](https://github.com/obestwalter/linpy3toolchain)
+To get right into the self referentiality: [here is a link to the page where this file is hosted](https://github.com/obestwalter/linpy3toolchain)
 * Writing a python script is easy 
 * ... the rest not so much
 
-
+This project explores the most sophisticated (linux centric) toolchain to create an Epic Hello World (TM) using everything the vast Python ecsosystem has to offer. The phrase 'Best Practices' comes to mind, but you won't here it from me ;)
 
 # General stuff
 
