@@ -9,15 +9,6 @@
     
 * downside if virtualenv: missing system package dependencies
 
+## Windows
 
-System wide:
-
-Easy: Vagrant
-Advanced: Docker
-Rocket Science: nix
-
-## Vagrant vs Docker
-
-http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment
-
-k
+**Caveat** I do all my development (in fact all non development as well (including gaming :)) on Linux and try to avoid Windows like the balck plague - so i might not be the most helpful resource in this area ...
