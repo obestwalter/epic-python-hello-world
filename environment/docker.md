@@ -27,5 +27,15 @@ http://docs.docker.com/reference/builder/
 
 # Misc
 
+# python docker image: https://registry.hub.docker.com/_/python/
 * autogenerate dockerfile from ubuntu image http://kracekumar.com/post/70198562577/autogenerate-dockerfile-from-ubuntu-image
 * Using docker to run python https://civisanalytics.com/blog/engineering/2014/08/14/Using-Docker-to-Run-Python/
+
+## Tidy up all local stuff (after experiments)
+
+    #!/bin/bash
+    # Delete all containers
+    docker rm $(docker ps -a -q)
+    # Delete all images
+    docker rmi $(docker images -q)
+    
