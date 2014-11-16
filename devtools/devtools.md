@@ -1,3 +1,7 @@
+# pep8 / pylint / pyflakes
+
+# pybuilder
+
 # Pycharm
 
 # pytest
@@ -8,5 +12,12 @@
 
 # tox
 
-# pybuilder
+
+# profilehooks
+
+# Travis CI
+
+# coveralls
+
+# coverage
 

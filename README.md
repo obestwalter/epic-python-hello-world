@@ -1,10 +1,15 @@
-# Nothing to see here yet ...
+# Self referential Epic Hello World Creator
 
-This might turn into a presentation about the dev toolchain in Python3
+* Writing a python script is easy 
+* ... the rest not so much
 
-## General stuff
 
-MVC Pattern as universal architecture suitable for a lot of applications
+
+# General stuff
+
+## MVC 
+
+* universal architecture pattern suitable for a lot of applications
 
 ## Potential slide hosters/tools
 
