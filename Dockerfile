@@ -22,21 +22,22 @@ RUN apt-get update && apt-get install -y \
     git \
     pandoc
 
+### PYENV ###
+
 ENV PYENV_ROOT $HOME/.pyenv
 ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
-
 # see https://github.com/yyuu/pyenv-installer
 RUN curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
-
 # RUN pyenv install 2.7.8
 RUN pyenv install 3.4.2
 RUN pyenv global 3.4.2
 RUN pyenv rehash
 RUN echo 'export PYENV_ROOT="$HOME/.pyenv"' >> /root/.bash_profile
 RUN echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> /etc/.bash_profile
-COPY
-#RUN pip install -r /vagrant/requirements.txt
+RUN echo 'eval "$(pyenv init -)"' >> /etc/.bash_profile
+### Install requirements ###
+COPY requirements.txt /root/requirements.txt
+RUN pip install -r /root/requirements.txt
 
-# END MY STUFF ################################################################
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
