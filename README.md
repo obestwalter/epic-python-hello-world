@@ -1,4 +1,7 @@
+
 # Self Referential Epic Hello World Creator
+
+**Todo turn this into an epic cement boss template**
 
 To get right into the self referentiality: [here is a link to the page where this file is hosted](https://github.com/obestwalter/linpy3toolchain)
 * Writing a python script is easy 
