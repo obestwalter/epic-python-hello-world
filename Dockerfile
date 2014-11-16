@@ -1,30 +1,41 @@
-# see:
+# see
 #   * https://docs.docker.com/articles/dockerfile_best-practices/
 #   * http://phusion.github.io/baseimage-docker
 #   * [Production] http://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/
 
-# see: https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
-FROM phusion/baseimage:0.9.13
+# see https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
+FROM phusion/baseimage:0.9.15
 MAINTAINER Oliver Bestwalter <oliver@bestwalter.de>
 
 ENV HOME /root
-
-# Regenerate SSH host keys. baseimage-docker does not contain any, so you
-# have to do that yourself. You may also comment out this instruction; the
-# init system will auto-generate one during boot.
 RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
-
-# Use baseimage-docker's init system.
 CMD ["/sbin/my_init", "--enable-insecure-key"]
 
-# BEGIN MY STUFF ##############################################################
+RUN apt-get update && apt-get install -y \
+    libmemcached-dev \
+    zlib1g-dev \
+    libssl-dev \
+    python-dev \
+    build-essential \
+    libsqlite3-dev \
+    libbz2-dev \
+    git \
+    pandoc
 
-#RUN apt-get update && apt-get install -y \
-#    python
-#    pandoc
+ENV PYENV_ROOT $HOME/.pyenv
+ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
 
-#COPY ./ /app
-#RUN pip install -r /app/requirements.txt
+# see https://github.com/yyuu/pyenv-installer
+RUN curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+
+# RUN pyenv install 2.7.8
+RUN pyenv install 3.4.2
+RUN pyenv global 3.4.2
+RUN pyenv rehash
+RUN echo 'export PYENV_ROOT="$HOME/.pyenv"' >> /root/.bash_profile
+RUN echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> /etc/.bash_profile
+COPY
+#RUN pip install -r /vagrant/requirements.txt
 
 # END MY STUFF ################################################################
 
