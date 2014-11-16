@@ -1,3 +1,9 @@
+"""
+User pandoc to generate rst files from md sources
+
+http://johnmacfarlane.net/pandoc
+"""
+
 import subprocess
 from plumbum.path import LocalWorkdir, LocalPath
 
