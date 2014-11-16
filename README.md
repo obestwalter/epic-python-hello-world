@@ -1,5 +1,6 @@
 # Self referential Epic Hello World Creator
 
+To get right into the self referentiality: [here i a link to the page where this file is hosted](https://github.com/obestwalter/linpy3toolchain)
 * Writing a python script is easy 
 * ... the rest not so much
 
