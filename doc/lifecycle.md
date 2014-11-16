@@ -3,37 +3,19 @@
 # source control / backup / collaboration
 
 One might argue that this approach is too optimistic, but in my opinion git in 
-combination with Github or Bitbucket covers all those problems atm.
-
-* Github 
-    * + Web UI pleases me more
-    * + more stuff I use is hosted there
-    * - no free pivate repos
-    * - only git (if you like hg more)
-
-* Bitbucket
-    * free private repositories
-
+combination with Github (or occasionally Bitbucket, but I prefer Github) covers all those problems atm.
 
 # Tests
 
-# pytest / tox
+## pytest + tox
     * minimal boilerplate
     * runner and framework together
     * killer feature: fixtures
-
-* unittest
-    * +- ? I don't use it
- 
-* nosetest
-    * +- ? I don't use it
-
+    * Holger Krekels tools generally rock and play nicely together
 
 # Documentation
 
 * Sphinx
-
-
 
 
 # The lifecycle of a python script

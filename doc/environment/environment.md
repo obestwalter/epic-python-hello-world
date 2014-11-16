@@ -15,3 +15,9 @@ System wide:
 Easy: Vagrant
 Advanced: Docker
 Rocket Science: nix
+
+## Vagrant vs Docker
+
+http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment
+
+k

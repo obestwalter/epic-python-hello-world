@@ -39,3 +39,7 @@ http://docs.docker.com/reference/builder/
     # Delete all images
     docker rmi $(docker images -q)
     
+
+# Advanced
+
+* smallest possible container: http://blog.xebia.com/2014/07/04/create-the-smallest-possible-docker-container/

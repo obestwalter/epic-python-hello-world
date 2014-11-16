@@ -1,5 +1,15 @@
 # Overview
 
+# commands
+
+    pyenv commands
+    
+https://github.com/yyuu/pyenv#readme
+
+https://github.com/yyuu/pyenv/wiki
+
+
+
 # Caveat
 
 Anytime you install a package using "pip install" that also installs a 
