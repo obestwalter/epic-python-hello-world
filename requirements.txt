@@ -4,3 +4,6 @@ plumbum
 ipython
 py
 pytest
+pybuilder
+flake8
+coverage
