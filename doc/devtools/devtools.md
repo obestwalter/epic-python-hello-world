@@ -21,3 +21,12 @@
 
 # coverage
 
+# frosted (pyflake fork)
+
+https://github.com/timothycrosley/frosted
+
+# RedBaron
+
+https://redbaron.readthedocs.org/en/latest/tuto.html
+
+
