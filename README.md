@@ -1,5 +1,7 @@
 # Self Referential Epic Hello World Creator
 
+**My chaotic little lab to create the mother of all hello world programs :)**
+
 **Todo turn this into an epic cement boss template**
 
 To get right into the self referentiality: [here is a link to the page where this file is hosted](https://github.com/obestwalter/linpy3toolchain)
