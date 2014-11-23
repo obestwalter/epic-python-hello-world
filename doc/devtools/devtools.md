@@ -8,6 +8,10 @@
 
 # pyenv
 
+## Caveats
+
+* virtualenvs created with other means don't work with pyenv (test/ask)
+
 # pyenv-virtualenvwrapper
 
 # tox
@@ -21,3 +25,4 @@
 
 # coverage
 
+In combination with https://github.com/edx/diff-cover

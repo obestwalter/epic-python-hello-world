@@ -27,6 +27,9 @@ https://eamann.com/tech/vagrant-windows/
 https://serversforhackers.com/articles/2014/03/20/getting-started-with-docker/
 https://www.digitalocean.com/community/tutorials/docker-explained-how-to-containerize-python-web-applications
 
+## Tutum private registry
+
+http://us8.campaign-archive1.com/?u=57b9190b37cc6cc0a3cf93b0a&id=071cfad63a&e=5dbe5c95e7
 
 ## Setup after installation
 
