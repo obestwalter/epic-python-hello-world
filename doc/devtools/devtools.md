@@ -26,3 +26,13 @@
 # coverage
 
 In combination with https://github.com/edx/diff-cover
+
+# frosted (pyflake fork)
+
+https://github.com/timothycrosley/frosted
+
+# RedBaron
+
+https://redbaron.readthedocs.org/en/latest/tuto.html
+
+
