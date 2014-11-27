@@ -11,7 +11,11 @@ ENV HOME /root
 RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 CMD ["/sbin/my_init", "--enable-insecure-key"]
 
-RUN apt-get update && apt-get install -y \
+# Python build dependencies
+RUN apt-get update
+
+# Python build dependencies
+RUN apt-get install -y \
     libmemcached-dev \
     zlib1g-dev \
     libssl-dev \
@@ -19,16 +23,19 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libsqlite3-dev \
     libbz2-dev \
-    git \
-    pandoc
+    libreadline6 \
+    libreadline6-dev
+
+# pyenv dependencies
+RUN apt-get install -y \
+    git
 
 ### PYENV ###
-
 ENV PYENV_ROOT $HOME/.pyenv
 ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
 # see https://github.com/yyuu/pyenv-installer
 RUN curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
-# RUN pyenv install 2.7.8
+RUN pyenv install 2.7.8
 RUN pyenv install 3.4.2
 RUN pyenv global 3.4.2
 RUN pyenv rehash
