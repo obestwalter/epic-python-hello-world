@@ -1,3 +1,5 @@
+ENV['VAGRANT_DEFAULT_PROVIDER'] ||= 'docker'
+
 Vagrant.configure("2") do |c|
     c.vm.define "phusion" do |p|
         p.vm.provider "docker" do |d|
